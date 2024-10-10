@@ -1,0 +1,7 @@
+{
+  "name": "frontend_examen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
