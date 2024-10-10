@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>edit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+
+      <ion-input  [(ngModel)]="titulo" label="Titulo" type="text" placeholder="Ingresar el titulo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input [(ngModel)]="editorial"  label="Editorial" type="text" placeholder="Ingresar la editorial"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="ano_publicacion" label="Año" type="text" placeholder="Ingresar el año de publicacion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="cantidad" label="Cantidad" type="number" placeholder="Ingresar la cantidad "></ion-input>
+
+    </ion-item>
+<ion-row>
+  <ion-col >
+    <ion-button type="button" (click)="actualizar()" >
+      <ion-icon slot="start" name="add"></ion-icon>
+     Actualizar
+    </ion-button>
+  </ion-col>
+</ion-row>
+
+
+</ion-list>
+</ion-content>

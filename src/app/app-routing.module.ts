@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'usuarios/create',
+    loadChildren: () => import('./usuarios/create/create.module').then( m => m.CreatePageModule)
+  },
+  {
+    path: 'usuarios/edit',
+    loadChildren: () => import('./usuarios/edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'libros/edit/:id',
+    loadChildren: () => import('./libros/edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'libros/create',
+    loadChildren: () => import('./libros/create/create.module').then( m => m.CreatePageModule)
+  },
 ];
 
 @NgModule({
